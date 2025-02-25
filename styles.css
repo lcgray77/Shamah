@@ -1,0 +1,56 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.crazy-background {
+    background: url('https://www.animatedimages.org/data/media/56/animated-surfing-image-0014.gif') repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flashing-text {
+    animation: flash 1s infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.clickable-gif {
+    cursor: pointer;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
